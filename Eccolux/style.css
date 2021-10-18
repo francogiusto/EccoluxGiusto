@@ -1,0 +1,427 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;}
+
+hr { height: 0.05rem; width: 62%; background-color: black; text-align: center; position: absolute; left: 19%;}
+
+/*-- fondo--*/
+body{
+    background-image: url(./img/Background.png);background-color: rgb(221, 219, 219); background-repeat:no-repeat;
+    background-size: cover; 
+    font-family: 'Advent Pro', sans-serif;}
+
+  
+
+
+/*-- header titulo inicio--*/
+.header__titulo{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-family: 'Advent Pro', sans-serif;font-weight: lighter;
+}
+/*-- header titulo fin--*/
+
+/*-- header menu inicio--*/
+.flex-container{
+    margin-left: 20vh;
+    margin-right: 20vh;
+    display: flex;
+    padding: 10px;
+    flex-wrap: nowrap;
+    justify-content:space-evenly
+}    
+
+.flex-container li,a    {
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style: none;
+    color: black; 
+   
+}
+
+.menuSuperior{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align:center;
+    overflow: hidden;
+    padding-top: 3vh;
+    list-style: none;
+}
+
+.menuSuperior li{
+    display: inline-block;
+    width: 13%;
+    position: relative;
+}
+
+.submenu{
+    position: absolute;
+    display: none;
+}
+
+.submenu li{
+    display: block;
+}
+
+.menuSuperior li:hover .submenu{
+    display: block;
+}
+
+.header__navbar--principal{
+    padding: 10vh;
+    list-style: none;
+}
+
+.header__navbar--principal li{
+    display: inline-block;
+}
+
+.header__navbar--principal a{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+}
+
+/*-- header menu fin--*/
+
+
+
+/*-- Ubicacion imagenes inicio--*/
+
+.espacioImagenes{
+    width: 400px; 
+    height: 600px;
+}
+
+.berlin{
+    position:absolute;
+    z-index: 3;
+    top: 36%; 
+    left: 45%;
+    width: 10%;
+    transition: width 0.5s;
+}
+
+.berlin:hover{
+    width: 10.4%
+}
+
+
+
+.chicago{
+    position:absolute;
+    z-index: 2;
+    top:42%; 
+    left: 37%; 
+    width: 11.5%;
+    transition: width 0.5s;
+}
+
+.chicago:hover{
+    width: 12%
+}
+
+.roma{
+    position:absolute;
+    z-index: 2;
+    top: 40%; 
+    left: 50%;
+    width: 15%;
+    transition: width 0.5s;
+}
+
+.roma:hover{
+    width: 15.5%;
+}
+
+.sidney{
+    position:absolute;
+    z-index: 1;
+    top: 53%; 
+    left: 56%; 
+    width: 15%;
+    transition: width 0.5s;
+}
+
+.sidney:hover{
+    width: 15.5%;
+}
+
+.barcelona{
+    position:absolute;
+    z-index: 1; 
+    top: 53%;
+    left: 27%;
+    width: 20%;
+    transition: width 0.5s;
+}
+
+.barcelona:hover{
+    width:20.5%
+}
+
+ 
+/*--Footer inicio--*/   
+
+
+.BarraFondoFooter{
+    background-color: rgba(37, 37, 37, 0.1); 
+    padding: 0.3%;  
+    text-align: center;
+    width: 100%;
+}
+
+.logo{height: 10vh;}
+
+.footer1{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer2{
+    display: flex;
+    justify-content: center;
+}
+/*--Footer fin--*/
+
+.footer__flexContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    background-color: rgba(221, 219, 219,0.8);
+    padding: 1rem;
+    
+}
+
+.footer__flexContainer li{
+    margin: 5px;
+    padding: 2px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+
+.footer__flexContainer h4{
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+.siguenosFooter{text-decoration: none;}
+.siguenosFooter li{
+    display: inline-block;
+    padding-top: 1rem;
+}
+
+
+/*--Paginas Berlin inicio--*/ 
+
+.espacioMain{
+    display: flex;
+    background-colr: turquoise; /*--Lo deje mal al codigo a proposito, para hacer una pruebas--*/ 
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.contenedor-imagen{
+    width: 45%;
+    background-olor: yellowgreen; /*--Lo deje mal al codigo a proposito, para hacer una pruebas--*/ 
+    display: flex;
+    justify-content: center;  
+}
+
+.contenedor-imagen img{
+    width: 28%;   
+}
+
+.contenedor-info{
+    width: 55%;
+    background-coor: tomato;  /*--Lo deje mal al codigo a proposito, para hacer una pruebas--*/  
+    font-size: 1.5rem;
+}
+
+.item{
+    padding: 0.5rem;
+}
+
+
+/*--Paginas Berlin Fin--*/ 
+
+
+/*--Paginas Chicago inicio--*/ 
+
+.contenedor-imagen--chicago{
+    width: 45%;
+    display: flex;
+    justify-content: center;  
+}
+
+.contenedor-imagen--chicago img{
+    width: 35%;   
+}
+
+
+/*--Paginas Chigao Fin--*/ 
+
+
+/*--Paginas Barcelona inicio--*/ 
+
+
+.contenedor-imagen--barcelona{
+    width: 45%;
+    display: flex;
+    justify-content: center;  
+}
+
+.contenedor-imagen--barcelona img{
+    width: 70%;   
+}
+
+
+.btnComprar{
+    background-color: rgb(190, 190, 190);
+    border-color: rgb(126, 126, 126);
+    font-family:'Advent Pro', sans-serif, serif;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.2rem;
+    font-weight: 500;
+    border: none;
+}
+
+.btnComprar:hover{
+    background-color: rgb(151, 150, 150)
+}
+
+/*--Paginas Barcelona Fin--*/ 
+
+/*--Paginas Roma inicio--*/ 
+
+.contenedor-imagen--roma{
+    width: 45%;
+    display: flex;
+    justify-content: center;  
+}
+
+.contenedor-imagen--roma img{
+    width: 50%;   
+}
+
+/*--Paginas Roma Fin--*/ 
+
+/*--Paginas Sidney inicio--*/ 
+
+.contenedor-imagen--sidney{
+    width: 45%;
+    display: flex;
+    justify-content: center;  
+}
+
+.contenedor-imagen--sidney img{
+    width: 70%;   
+}
+/*--Paginas Sidney Fin--*/ 
+
+/*--Contacto inicio--*/ 
+.espacioFormulario{
+ padding: 2rem;
+ margin: 2rem;
+}
+
+.flexFormulario{
+    margin: 1rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;  
+}
+
+.flexFormulario1{
+    display: flex;            
+}
+
+
+.formulario{
+    text-decoration: none;
+    font-size: 3vh;
+    padding: 1rem;
+    width: 20vw;    
+} 
+
+.contacto-form__input{
+    margin-bottom: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0.5rem;
+    border: none;
+    color: black; 
+    font-size: 1rem;
+    width: 100%;
+}
+.btnEnviar{width: 49%;
+    background-color: rgb(190, 190, 190);
+    border-color: rgb(126, 126, 126);
+    font-family:'Advent Pro', sans-serif, serif;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.2rem;
+    font-weight: 500;
+    border: none;
+}
+
+.btnReset{width: 49%;
+    background-color: rgb(190, 190, 190);
+    border-color: rgb(126, 126, 126);
+    font-family:'Advent Pro', sans-serif, serif;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.2rem;
+    font-weight: 500;
+    border: none;
+}
+
+
+.btnEnviar:hover{
+    background-color: rgb(151, 150, 150)
+}
+.btnReset:hover{
+    background-color: rgb(151, 150, 150)
+}
+/*--Contacto fin--*/ 
+
+/*--Sobre Nosotros inicio--*/ 
+
+
+.sobreNosotros{
+    text-decoration: none;
+    font-size: 3vh;
+    padding: 4rem;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+} 
+
+.sobreNosotros p{
+    text-align: justify;
+}
+
+.sobreNosotros h2{
+    padding-bottom: 3rem;
+    text-align: left;
+}
+
+.sobreNosotros img{
+    padding: 1rem;
+}
+
+/*--Sobre Nosotros fin--*/ 
